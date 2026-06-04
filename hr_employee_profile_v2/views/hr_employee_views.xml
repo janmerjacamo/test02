@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_employee_form_rrhh_v2" model="ir.ui.view">
+        <field name="name">hr.employee.form.rrhh.v2</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Ficha RRHH">
+                    <group>
+                        <group string="Datos Personales">
+                            <field name="x_department_work"/>
+                            <field name="x_service_position"/>
+                            <field name="x_hr_responsible"/>
+                            <field name="x_home_phone"/>
+                            <field name="x_dpi"/>
+                            <field name="x_nit"/>
+                            <field name="x_igss"/>
+                            <field name="x_birth_place_custom"/>
+                            <field name="x_emergency_phone_custom"/>
+                        </group>
+                        <group string="Datos Familiares">
+                            <field name="x_father_name"/>
+                            <field name="x_mother_name"/>
+                            <field name="x_spouse_name"/>
+                            <field name="x_children_qty"/>
+                            <field name="x_siblings_qty"/>
+                        </group>
+                        <group string="Salud">
+                            <field name="x_smokes"/>
+                            <field name="x_drinks"/>
+                            <field name="x_sports"/>
+                            <field name="x_weight"/>
+                            <field name="x_height"/>
+                            <field name="x_blood_type"/>
+                            <field name="x_disease"/>
+                            <field name="x_medication"/>
+                        </group>
+                        <group string="Trabajo">
+                            <field name="x_reentry_date"/>
+                            <field name="x_job_address"/>
+                            <field name="x_direct_manager_custom"/>
+                            <field name="x_position_change_date"/>
+                            <field name="x_new_position"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

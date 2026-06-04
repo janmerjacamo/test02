@@ -1,0 +1,32 @@
+from odoo import models, fields
+
+class HrEmployee(models.Model):
+    _inherit = "hr.employee"
+
+    x_dpi = fields.Char("DPI")
+    x_nit = fields.Char("NIT")
+    x_igss = fields.Char("Afiliación IGSS")
+    x_home_phone = fields.Char("Teléfono Casa")
+    x_department_work = fields.Char("Departamento Trabajo")
+    x_service_position = fields.Char("Puesto de Servicio")
+    x_hr_responsible = fields.Char("Responsable RRHH")
+    x_birth_place_custom = fields.Char("Lugar de Nacimiento")
+    x_emergency_phone_custom = fields.Char("Teléfono Emergencia")
+    x_father_name = fields.Char("Nombre Padre")
+    x_mother_name = fields.Char("Nombre Madre")
+    x_spouse_name = fields.Char("Nombre Cónyuge")
+    x_children_qty = fields.Integer("Número Hijos")
+    x_siblings_qty = fields.Integer("Número Hermanos")
+    x_smokes = fields.Boolean("Fuma")
+    x_drinks = fields.Boolean("Bebe")
+    x_sports = fields.Boolean("Actividades Deportivas")
+    x_weight = fields.Float("Peso")
+    x_height = fields.Float("Altura")
+    x_blood_type = fields.Char("Tipo de Sangre")
+    x_disease = fields.Text("Enfermedades")
+    x_medication = fields.Text("Medicamentos")
+    x_reentry_date = fields.Date("Fecha Reingreso")
+    x_job_address = fields.Char("Dirección Puesto")
+    x_direct_manager_custom = fields.Char("Jefe Inmediato")
+    x_position_change_date = fields.Date("Fecha Cambio Puesto")
+    x_new_position = fields.Char("Nuevo Puesto")
